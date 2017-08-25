@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NY Times Search Box</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <style type="text/css">
+    body {
+        background-color: #fff;
+    }
+    /* .container {
+    	background-color:red;
+    	margin-left:30%;
+    	margin-right:25%;
+    }*/
+
+    .jumbotron {
+        background-color: indigo;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        height: 180px;
+    }
+
+    #form {
+        border: 1px #666 solid;
+        height: 400px;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .articles {
+    	border: 1px #666 solid;
+        padding: 20px;
+        margin-top: 0;
+        background-color:#ccc;
+    }
+    .headings {
+        background-color: #000;
+        color: #fff;
+        padding-top: 2px;
+        margin-bottom: 0;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #search,
+    #clearResults {
+        background-color: #777;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron">
+                    <h1>New York Times Search</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="headings">Search Parameters</h3>
+                <form id="form" id="divBody">
+                    Search Terms:
+                    <br/>
+                    <input type="text"></input>
+                    <br /> Number of Records to Retrieve
+                    <br />
+                    <select name="numResults">
+                        <option value="one">1</option>
+                        <option value="five">5</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <br/> Start Year(Optional):
+                    <br />
+                    <input type="text"></input>
+                    <br/> End Year(Optional):
+                    <br />
+                    <input type="text"></input>
+                    <br />
+                    <button id="search" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
+                    <button id="clearResults" class="btn btn-primary"><i class="icon-remove-sign"></i>Clear Results</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="headings">Top Articles</h3>
+                <div class="articles">
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
